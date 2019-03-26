@@ -9,14 +9,7 @@ namespace DesignPatterns_SRP
         {
             StandardMessages.WelcomeMessage();
 
-            //Ask for user information
-            Person user = new Person();
-
-            Console.WriteLine("What is your firstName:   ");
-            user.FirstName = Console.ReadLine();
-
-            Console.WriteLine("What is your lastName:   ");
-            user.LastName = Console.ReadLine();
+            var user = PersonDataCapture.Capture();
 
             //Check to be sure that first and last names are valid
             if (string.IsNullOrWhiteSpace(user.FirstName))

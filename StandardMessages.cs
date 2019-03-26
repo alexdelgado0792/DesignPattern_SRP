@@ -2,7 +2,7 @@ using System;
 
 namespace SingleResposabilityPrinciple
 {
-    public static class StandardMessages
+    public class StandardMessages
     {
         public static void WelcomeMessage()
         {
