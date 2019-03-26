@@ -13,5 +13,10 @@ namespace SingleResposabilityPrinciple
         {
             Console.ReadLine();
         }
+
+        public static void DisplayValidatorError(string fieldName)
+        {
+            Console.WriteLine($"You did not give us a valid { fieldName }!");
+        }
     }
 }
