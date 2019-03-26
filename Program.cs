@@ -1,6 +1,7 @@
 ﻿using System;
 using SingleResposabilityPrinciple;
 using SingleResposabilityPrinciple.Validators;
+using SingleResposabilityPrinciple.BusinessLogic;
 
 namespace DesignPatterns_SRP
 {
@@ -18,8 +19,8 @@ namespace DesignPatterns_SRP
                 StandardMessages.EndApplication();
             }
 
-            // Create username for the person
-            Console.WriteLine($"Your username is {user.FirstName}{user.LastName}");
+            AccountGenerator.CreateAccount(user);
+            
             StandardMessages.EndApplication();
         }
     }
