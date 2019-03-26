@@ -1,4 +1,5 @@
 ﻿using System;
+using SingleResposabilityPrinciple;
 
 namespace DesignPatterns_SRP
 {
@@ -6,7 +7,7 @@ namespace DesignPatterns_SRP
     {
         public static void Main(string[] args)
         {
-            Console.WriteLine("Welcome to my Application !!!");
+            StandardMessages.WelcomeMessage();
 
             //Ask for user information
             Person user = new Person();
@@ -21,20 +22,20 @@ namespace DesignPatterns_SRP
             if (string.IsNullOrWhiteSpace(user.FirstName))
             {
                 Console.WriteLine("You did not give us a valid first name !");
-                Console.ReadLine();
+                StandardMessages.EndApplication();
                 return;
             }
 
             if (string.IsNullOrWhiteSpace(user.LastName))
             {
                 Console.WriteLine("You did not give us a valid last name !");
-                Console.ReadLine();
+                StandardMessages.EndApplication();
                 return;
             }
 
             // Create username for the person
             Console.WriteLine($"Your username is {user.FirstName}{user.LastName}");
-            Console.ReadLine();
+            StandardMessages.EndApplication();
         }
     }
 }
