@@ -1,5 +1,4 @@
-﻿using System;
-using SingleResposabilityPrinciple;
+﻿using SingleResposabilityPrinciple;
 using SingleResposabilityPrinciple.Validators;
 using SingleResposabilityPrinciple.BusinessLogic;
 
