@@ -17,6 +17,7 @@ namespace DesignPatterns_SRP
             if (!PersonValidator.Validate(user))
             {
                 StandardMessages.EndApplication();
+                return;
             }
 
             AccountGenerator.CreateAccount(user);
