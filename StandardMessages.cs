@@ -11,6 +11,7 @@ namespace SingleResposabilityPrinciple
 
         public static void EndApplication()
         {
+            Console.WriteLine("Press enter to close...");
             Console.ReadLine();
         }
 
