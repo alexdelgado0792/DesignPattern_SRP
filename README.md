@@ -1,2 +1,3 @@
 # Single Responsibility Principle
-A class should only have one responsability or another way is that it only have one reason to change.
+
+This principle tell us to distribute responsibilities and create classes that stick with only a single responsibility. Therefore,a single class should be responsible for a single operation.
